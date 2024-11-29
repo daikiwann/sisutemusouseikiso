@@ -1,12 +1,20 @@
+#include<math.h>
 #include<stdio.h>
+
 int main(void)
 {
-	int total=0;
+	int i=1;
+	printf("逆数　2乗　平方根\n");
+	printf("-------------------\n");
 	
-	for(int i=1;i<=10;i++)
+	while(i<=10)
 	{
-		total=total+i;
+		double value=i;
+		double a=1/value;
+		double b=value*value;
+		double c=sqrt(value);
+		printf("%5.1f %5.3f %6.1f %6.4f\n",value,a,b,c);
+		i=i+1;
 	}
-	printf("1から10までの和Adです\n",total);
 	return 0;
-}
+}	
